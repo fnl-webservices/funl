@@ -1,0 +1,158 @@
+<!--
+Fedoz Upstream — Clickable HTML-only wireframe
+Files: single self-contained HTML file (open in browser)
+How to preview: save this file as `index.html` and open it in any modern browser.
+Notes: pure HTML + embedded CSS (no JavaScript). Mobile nav uses the CSS checkbox hack. Sections are anchor-linked for quick client preview. All images/visuals are grey placeholder boxes.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fedoz Upstream — Wireframe</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="brand">Fedoz Upstream</div>
+
+      <!-- checkbox hack for mobile menu -->
+      <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-hidden="true">
+      <label for="menu-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav role="navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#who">Who we are</a></li>
+          <li><a href="#what">What we do</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#newsroom">Newsroom</a></li>
+          <li><a href="#investors">Investors</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="content">
+        <h1 id="hero-heading">Fedoz Upstream — Responsible energy, engineered for tomorrow.</h1>
+        <p class="lead">Delivering safe and sustainable upstream solutions across the region.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#what">Our Projects</a>
+          <a class="btn btn-ghost" href="#sustainability">Sustainability</a>
+        </div>
+      </div>
+      <div>
+        <span class="placeholder" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <!-- Highlights strip -->
+    <section class="highlights" aria-label="Highlights">
+      <div class="card"><div class="thumb" aria-hidden="true"></div><strong>Operational excellence</strong><p style="margin:6px 0 0;color:#6b7280">Brief one-liner</p></div>
+      <div class="card"><div class="thumb" aria-hidden="true"></div><strong>Safety & Integrity</strong><p style="margin:6px 0 0;color:#6b7280">Brief one-liner</p></div>
+      <div class="card"><div class="thumb" aria-hidden="true"></div><strong>Project pipeline</strong><p style="margin:6px 0 0;color:#6b7280">Brief one-liner</p></div>
+      <div class="card"><div class="thumb" aria-hidden="true"></div><strong>Investor updates</strong><p style="margin:6px 0 0;color:#6b7280">Brief one-liner</p></div>
+    </section>
+
+    <!-- Who we are -->
+    <section id="who" class="two-col" aria-labelledby="who-heading">
+      <div>
+        <h2 id="who-heading">Who we are</h2>
+        <p>Fedoz Upstream is committed to delivering responsible upstream energy solutions with a focus on safety, efficiency, and sustainability. <a href="#">Learn more →</a></p>
+      </div>
+      <div><span class="placeholder" aria-hidden="true" style="height:220px"></span></div>
+    </section>
+
+    <!-- What we do -->
+    <section id="what" aria-labelledby="what-heading">
+      <h2 id="what-heading">What we do</h2>
+      <div class="services-grid">
+        <div class="service"><div class="placeholder" style="height:100px;margin-bottom:10px"></div><strong>Exploration</strong><p style="margin:6px 0 0;color:#6b7280">Location scouting, seismic, and early-stage studies.</p></div>
+        <div class="service"><div class="placeholder" style="height:100px;margin-bottom:10px"></div><strong>Production</strong><p style="margin:6px 0 0;color:#6b7280">Field operations, asset optimisation, and maintenance.</p></div>
+        <div class="service"><div class="placeholder" style="height:100px;margin-bottom:10px"></div><strong>Engineering</strong><p style="margin:6px 0 0;color:#6b7280">Design and project delivery for upstream facilities.</p></div>
+      </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section id="sustainability">
+      <div class="sustain">
+        <h2>Sustainability</h2>
+        <p class="lead">Snapshot of sustainability commitments and targets.</p>
+        <div class="stats">
+          <div class="stat"><strong>Emissions</strong><p style="margin-top:8px;color:#334155">Target &amp; progress</p></div>
+          <div class="stat"><strong>Community</strong><p style="margin-top:8px;color:#334155">Projects &amp; impact</p></div>
+          <div class="stat"><strong>Investment</strong><p style="margin-top:8px;color:#334155">Green financing</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Carousel -->
+    <section id="community">
+      <h2>Community</h2>
+      <p class="lead">Stories and partnerships in the communities we operate in.</p>
+      <div class="carousel" aria-label="Community stories">
+        <div class="carousel-card"><span class="placeholder" style="height:110px;display:block"></span><p style="margin:8px 0 0">Community project 1</p></div>
+        <div class="carousel-card"><span class="placeholder" style="height:110px;display:block"></span><p style="margin:8px 0 0">Community project 2</p></div>
+        <div class="carousel-card"><span class="placeholder" style="height:110px;display:block"></span><p style="margin:8px 0 0">Community project 3</p></div>
+        <div class="carousel-card"><span class="placeholder" style="height:110px;display:block"></span><p style="margin:8px 0 0">Community project 4</p></div>
+      </div>
+    </section>
+
+    <!-- Newsroom -->
+    <section id="newsroom">
+      <h2>Newsroom</h2>
+      <div class="news">
+        <div><span class="placeholder" style="height:200px;display:block"></span></div>
+        <div class="news-list">
+          <a href="#">Press release — Project milestone</a>
+          <a href="#">Announcement — Sustainability partnership</a>
+          <a href="#">Insight — Quarterly progress</a>
+          <a href="#">View all newsroom →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investors -->
+    <section id="investors">
+      <h2>Investors</h2>
+      <div class="investors">
+        <div class="mini"><ul style="margin:0;padding-left:18px"><li>Reports &amp; filings</li><li>Financial calendar</li><li>IR contacts</li></ul></div>
+        <div style="width:320px"><span class="placeholder" style="height:140px;display:block"></span></div>
+      </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" style="padding:16px">
+      <div class="careers-banner">
+        <div>
+          <h2 style="margin:0">Careers</h2>
+          <p style="margin:6px 0 0">Join a team committed to safety, innovation and community.</p>
+        </div>
+        <div><a class="btn btn-primary" href="#">See openings</a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="foot-inner">
+      <div>
+        <div style="font-weight:700">Fedoz Upstream</div>
+        <div style="margin-top:8px;max-width:320px;color:#cbd5e1">Contact: info@fedozupstream.example • +234 800 000 000</div>
+      </div>
+      <div style="text-align:right">
+        <div style="margin-bottom:8px">Quick links</div>
+        <div style="display:flex;gap:10px;justify-content:flex-end"><a href="#who" style="color:#fff;text-decoration:none">Who we are</a><a href="#newsroom" style="color:#fff;text-decoration:none">Newsroom</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

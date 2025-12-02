@@ -1,0 +1,361 @@
+    :root {
+      --bg: #ffffff;
+      --muted: #f4f5f6;
+      --accent: #0b3d91;
+      --text: #111827;
+      --placeholder: #d1d5db;
+      --placeholder-2: #9ca3af;
+      --radius: 10px;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.45
+    }
+
+    /* Header / Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+      backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.04)
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.4px
+    }
+
+    nav ul {
+      display: flex;
+      gap: 18px;
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 14px
+    }
+
+    nav a:focus,
+    nav a:hover {
+      background: var(--muted)
+    }
+
+    /* Mobile menu (checkbox hack) */
+    .menu-toggle {
+      display: none
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      width: 28px;
+      cursor: pointer
+    }
+
+    .hamburger span {
+      height: 3px;
+      background: #111;
+      border-radius: 2px
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 1200px;
+      margin: 28px auto;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 28px;
+      align-items: center
+    }
+
+    .hero .content h1 {
+      font-size: 28px;
+      margin: 0 0 10px
+    }
+
+    .hero .content p {
+      margin: 0 0 18px;
+      color: #4b5563
+    }
+
+    .ctas {
+      display: flex;
+      gap: 12px
+    }
+
+    .btn {
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--placeholder-2);
+      color: var(--text)
+    }
+
+    .placeholder {
+      background: linear-gradient(180deg, var(--placeholder) 0%, #e6e7e9 100%);
+      border-radius: var(--radius);
+      min-height: 200px;
+      display: block
+    }
+
+    .hero .placeholder {
+      height: 260px
+    }
+
+    /* Highlights strip */
+    .highlights {
+      max-width: 1200px;
+      margin: 8px auto;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px
+    }
+
+    .card {
+      background: var(--muted);
+      padding: 14px;
+      border-radius: 10px
+    }
+
+    .card .thumb {
+      height: 72px;
+      background: var(--placeholder);
+      border-radius: 8px;
+      margin-bottom: 10px
+    }
+
+    /* Sections */
+    section {
+      max-width: 1200px;
+      margin: 26px auto;
+      padding: 0 16px
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 28px;
+      align-items: center
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px
+    }
+
+    .service {
+      background: var(--muted);
+      padding: 14px;
+      border-radius: 10px
+    }
+
+    .sustain {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 12px
+    }
+
+    .stats {
+      display: flex;
+      gap: 12px
+    }
+
+    .stat {
+      flex: 1;
+      background: var(--placeholder);
+      padding: 18px;
+      border-radius: 8px;
+      min-height: 92px
+    }
+
+    .carousel {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 8px
+    }
+
+    .carousel::-webkit-scrollbar {
+      height: 8px
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background: var(--placeholder-2);
+      border-radius: 8px
+    }
+
+    .carousel-card {
+      min-width: 220px;
+      background: var(--placeholder);
+      padding: 10px;
+      border-radius: 8px
+    }
+
+    .news {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 16px
+    }
+
+    .news-list a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px dashed rgba(15, 23, 42, 0.06);
+      color: var(--text);
+      text-decoration: none
+    }
+
+    .investors {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .investors .mini {
+      flex: 1
+    }
+
+    .careers-banner {
+      background: linear-gradient(90deg, #eef2ff, #f8fafc);
+      padding: 22px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px
+    }
+
+    footer {
+      background: #0f1724;
+      color: #fff;
+      padding: 22px;
+      margin-top: 28px
+    }
+
+    footer .foot-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px
+    }
+
+    /* Responsive */
+    @media (max-width:1024px) {
+      .hero {
+        grid-template-columns: 1fr 320px
+      }
+
+      .two-col {
+        grid-template-columns: 1fr
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .highlights {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media (max-width:768px) {
+      .nav-inner {
+        padding: 10px
+      }
+
+      nav ul {
+        display: none
+      }
+
+      .hamburger {
+        display: flex
+      }
+
+      .menu-toggle:checked+nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 64px;
+        background: var(--bg);
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08)
+      }
+
+      header {
+        position: sticky
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 16px
+      }
+
+      .highlights {
+        grid-template-columns: 1fr
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr
+      }
+
+      .carousel-card {
+        min-width: 160px
+      }
+    }
+
+    /* small niceties */
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px
+    }
+
+    p.lead {
+      color: #374151
+    }
